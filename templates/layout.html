@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{%  block webtitle %}{%  endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <header>
+  <div class="container">
+      <h1 id="mylogo">
+          <img src="{{ url_for('static', filename='8451_logo.png') }}"
+               alt="84.51"
+               width=auto
+               height="25">
+      </h1>
+      <h2 class="logo">
+          {%  block title %}{%  endblock %}
+      </h2>
+      <strong><nav>
+          <ul class="menu">
+              <li><a href="{{ url_for('go_home') }}">Home</a></li>
+              <li><a href="{{ url_for('how_to') }}">Instructions</a></li>
+              <li><a href = "mailto:anthony.igel@8451.com?subject = Feedback&body = Message"> Questions? </a></li>
+          </ul>
+      </nav></strong>
+  </div>
+  </header>
+  <body>
+  <div class="container">
+      {% block content %}{% endblock %}
+  </div>
+  </body>
+<footer>
+    <div class="container">
+        <p>84.51 &deg; </p>
+    </div>
+</footer>
+</html>
