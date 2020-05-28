@@ -1,0 +1,4 @@
+poirot>=1.2
+effodata>=1.2
+kpi-metrics
+flask>=1.1.1
