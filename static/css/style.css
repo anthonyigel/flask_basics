@@ -1,0 +1,106 @@
+/* Formatting the header area */
+header {
+    background-image: url('/static/effo_gradient.png');
+    background-size: auto;
+    object-fit: scale-down;
+    height: 35px;
+    width: 100%;
+    opacity: .9;
+    margin-bottom: 100px;
+}
+
+/* 84.51 logo */
+#mylogo {
+    margin: 0;
+    float: right;
+    height: 10px;
+    object-fit: scale-down;
+}
+
+/* Title for Header */
+header h2.logo {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.7em;
+    color: #fff;
+    text-transform: uppercase;
+    float: left;
+}
+
+/* Menu button formatting */
+.menu {
+  float: left;
+  margin-top: 8px;
+}
+.menu li {
+  display: inline;
+}
+.menu li + li {
+  margin-left: 35px;
+}
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* Formatting the container margins and formats */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #444;
+}
+
+.container {
+    width: 1900px;
+    margin: 0 auto;
+}
+
+/* Input formats */
+form.input {
+    margin-right: 10px;
+}
+
+input[type=month] {
+    align-self: start;
+
+}
+
+input[type=file] {
+    align-self: start;
+    min-width: 10em;
+}
+input[type=submit] {
+    align-self: start;
+    min-width: 10em;
+    text-transform: uppercase;
+}
+
+
+/* Action button */
+button {
+    background: lightgrey;
+    color: black;
+    text-transform: uppercase;
+
+}
+
+/* Action button when hovered */
+button:hover {
+    text-transform: uppercase;
+    background: linear-gradient(to bottom right, #6A00AC, #C800A1);
+    color: #FFFFFF;
+
+}
+
+
+/* Footer formatting */
+footer {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    border-top: 2px solid #eee;
+    height: 60px;
+    width: 100%;
+    opacity: .9;
+}
